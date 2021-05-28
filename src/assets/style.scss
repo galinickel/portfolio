@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  background-color: wheat;
+  min-height: 33rem;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-evenly;
+  section {
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+}
+
+.about {
+  background-color: aliceblue;
+  min-height: 33rem;
+  display: flex;
+}
+
+.projects {
+  background-color: salmon;
+  min-height: 33rem;
+  padding: 2rem 1rem;
+  .list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+margin: 0 auto;
+      .item-card{
+width: 325px;
+min-height: 20rem;
+      }
+  }
+}

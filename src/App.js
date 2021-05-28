@@ -1,19 +1,24 @@
 import React from 'react'
+import './assets/main.scss'
+import "wired-elements";
 
+import Header from './cmps/Header'
+import About from './cmps/About'
+import Projects from './cmps/Projects'
 
-class App extends React.Component {
-  state = {
-
-  }
-
-  render() {
+const App = ()=>{
     return (
       <div className="App ui container">
-        App
+        <Header/>
+        <wired-divider/>
+        <Projects/>
+        <wired-divider/>
+        <About/>
+
       </div>
     );
+  
   }
-}
 
 export default App;
 
