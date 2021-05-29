@@ -13,6 +13,7 @@ const App = () => {
       <section className="menu-bar">
             <wired-listbox horizontal>
                 <Link to='/'><wired-item>Home</wired-item></Link>
+                <Link to='/'><wired-item>About</wired-item></Link>
                 <Link to='/portfolio'><wired-item>Projects</wired-item></Link>
             </wired-listbox>
         </section>

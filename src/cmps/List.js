@@ -8,8 +8,10 @@ const List = props=>{
     return( 
         <div className="list-block">
             {listToRender.map(project=>{
+                console.log(project);
             return <Item
-            key={project}></Item>
+            key={project}
+            project={project}></Item>
             })}
         </div>
     )

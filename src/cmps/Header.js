@@ -5,8 +5,7 @@ const Header = props => {
     return (
         <div className="header">
             <section className="introduction">
-                {/* <svg src="/images/brush-stroke.svg"></svg> */}
-                {/* <img src="/images/brush-stroke.png"/> */}
+                {/* <img src="/images/brush-stroke.png" alt="paint-stroke"/> */}
                     <h1>Gali Nickel</h1>
                     <h2>Fullstack Developer</h2>
             </section>

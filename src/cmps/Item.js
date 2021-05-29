@@ -3,25 +3,33 @@ import "wired-elements";
 
 const Item = props => {
     const [displayModal, toggleModal] = useState(false)
-
+    const { img,title,secondaryTitle,description,link,github } = props.project
+    const style = {
+        backgroundImage: `url(${img})`,
+        height: '15rem',
+        backgroundSize: 'cover'
+    }
+    console.log(img);
     let isOpen = displayModal ? { 'open': '' } : {}
     return (
         <div className="item-container">
             <div className="item-card">
                 <section>
                     <wired-card class="img-preview">
+                        <div style={style}>
+                        </div>
                         <h2>
-                            Image Placeholder
+                            {title}
                         </h2>
                     </wired-card>
                 </section>
                 <section className="description">
                     <div>
                         <h2>
-                            Title
+                            {secondaryTitle}
                     </h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nibh mauris, efficitur ac finibus in, vulputate vitae lectus. Mauris lobortis lacus dui, eget fringilla dui.
+                            {description}
                     </p>
                         <wired-button
                             onClick={() => toggleModal(!displayModal)}>
