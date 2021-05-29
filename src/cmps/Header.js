@@ -4,11 +4,11 @@ import "wired-elements";
 const Header = props => {
     return (
         <div className="header">
-            <section>
-                <wired-card  >
+            <section className="introduction">
+                {/* <svg src="/images/brush-stroke.svg"></svg> */}
+                {/* <img src="/images/brush-stroke.png"/> */}
                     <h1>Gali Nickel</h1>
                     <h2>Fullstack Developer</h2>
-        </wired-card>
             </section>
             <section>
                 <wired-card class="header-img" >

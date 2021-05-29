@@ -7,7 +7,9 @@ const About = props=>{
 Image
 </section>
 <section>
-    Info
+  <h1>
+      Hey- I'm Gali.
+  </h1>
 </section>
         </div>
     )

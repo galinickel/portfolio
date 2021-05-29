@@ -6,7 +6,7 @@ import Item from './Item'
 const List = props=>{
     const {listToRender} = props
     return( 
-        <div className="list-block">
+        <div className="list">
             {listToRender.map(project=>{
             return <Item
             key={project}></Item>
