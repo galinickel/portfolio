@@ -1,13 +1,13 @@
-import { React, useState } from 'react'
+import { React, useState, useRef } from 'react'
 import Fade from 'react-reveal/Fade';
 
-// import {Link} from 'react-router-dom'
-import Header from '../cmps/Header'
 import About from '../cmps/About'
 import List from '../cmps/List'
 
 const Homepage = () => {
     const [showList, toggleList] = useState(false)
+    const projectsRef = useRef(null)
+    const aboutRef = useRef(null)
 
     const list = [{
         img: '/images/trellworks.webp',
@@ -37,18 +37,30 @@ const Homepage = () => {
 
     return (
         <>
-            <Header />
-            <div className="project-highlight">
+            <div className="header">
+                <Fade left><section className="introduction">
+                    <h1>Gali Nickel</h1>
+                    <h2>Fullstack Developer</h2>
+                        <wired-card class="cta-bar" horizontal elevation={2}>
+                            <span onClick={() => { aboutRef.current.scrollIntoView() }}>Get to know me</span>
+                            <span onClick={() => { projectsRef.current.scrollIntoView() }}>Projects</span>
+                            <span>Contact</span>
+                        </wired-card>
+                </section>
+                </Fade>
+            </div>
+            <div ref={projectsRef} className="project-highlight">
                 <h1>Project Highlight</h1>
                 <List listToRender={list} />
                 <p>Wanna see more projects? They're all right here!</p>
-                <wired-button onClick={()=>toggleList(!showList)}>
+                <wired-button onClick={() => toggleList(!showList)}>
                     Click Click!</wired-button>
             </div>
             <Fade top when={showList}>
-            {showList && <List listToRender={secondaryList} />}         
+                {showList && <List listToRender={secondaryList} />}
             </Fade>
-            <About />
+            <div ref={aboutRef}>  <About /></div>
+
         </>
     )
 }

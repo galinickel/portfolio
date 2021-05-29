@@ -9,7 +9,6 @@ const Item = props => {
         height: '15rem',
         backgroundSize: 'cover'
     }
-    console.log(img);
     let isOpen = displayModal ? { 'open': '' } : {}
     return (
         <div className="item-container">
@@ -40,17 +39,14 @@ const Item = props => {
                 <wired-dialog {...isOpen}>
                     <div className="modal">
                         <section>
-                            <h1>AAA</h1>
-
+                            <h1>{title}</h1>
                         </section>
                         <section>
                             <wired-button
                                 onClick={() => toggleModal(!displayModal)}
                                 id="closeDialog">X</wired-button>
                         </section>
-
                     </div>
-
                 </wired-dialog>
             </div>
         </div>

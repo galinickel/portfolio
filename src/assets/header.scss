@@ -1,7 +1,9 @@
 .header {
     display: flex;
     background-color: wheat;
-    min-height: 33rem;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    min-height: 45rem;
     height: fit-content;
     align-items: center;
     justify-content: space-evenly;
@@ -35,12 +37,21 @@
             z-index: 1;
         }
 
-        // img {
-        //     position: absolute;
-        //     width: 50rem;
-        //     top: -2rem;
-        //     left: -1rem;
-        //     width: 40rem;
-        // }
+        .cta-bar {
+            padding: 1rem;
+
+            span {
+                letter-spacing: 1px;
+                margin: 0 10px;
+                cursor: pointer;
+                padding: .5rem;
+                transition: all .2s ease;
+
+                &:hover {
+                    background-color: rgba(0, 0, 255, 0.123);
+                }
+            }
+        }
+
     }
 }
