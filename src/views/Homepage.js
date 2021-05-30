@@ -10,7 +10,7 @@ const Homepage = () => {
     const aboutRef = useRef(null)
 
     const list = [{
-        img: '/images/trellworks.webp',
+        img: 'images/trellworks.webp',
         elevation: 4,
         title: 'Trellworks - Vue Based Trello Clone',
         secondaryTitle: 'Manage your team in a highly customizable environment.',
@@ -21,7 +21,7 @@ const Homepage = () => {
     }]
 
     const secondaryList = [{
-        img: '/images/appsus.png',
+        img: 'images/appsus.png',
         elevation: 2,
         title: 'Appsus - Vue based Mail & Notes App',
         secondaryTitle: 'Keep track of your notes and Emails, all in one place.',
@@ -31,7 +31,7 @@ const Homepage = () => {
         extendedDescription: ''
     },
     {
-        img: '/images/memegenerator.png',
+        img: 'images/memegenerator.png',
         elevation: 1,
         title: 'Vanilla JS Based Meme Generator',
         secondaryTitle: 'Manage your team in a highly customizable environment.',
@@ -40,7 +40,7 @@ const Homepage = () => {
         github: ''
     },
     {
-        img: '/images/memegenerator.png',
+        img: 'images/memegenerator.png',
         elevation: 3,
         title: 'Another pROJ',
         secondaryTitle: 'Manage your team in a highly customizable environment.',
