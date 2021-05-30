@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+.App.ui{
+  margin-top: -2rem;
+}
 html {
   scroll-behavior: smooth;
   color: hsl(219, 57%, 25%);
