@@ -9,7 +9,7 @@ const List = props=>{
         <div className="list-block">
             {listToRender.map(project=>{
             return <Item
-            key={project}
+            key={project.title}
             project={project}></Item>
             })}
         </div>

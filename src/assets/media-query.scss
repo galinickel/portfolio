@@ -1,14 +1,35 @@
+@media screen and (max-width:1450px) {
+  .header {
+    background-position-y: unset;
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .header {
+    background-position-y: 4rem;
+  }
+
+  .modal {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  #closeDialog {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .modal-img{
+    max-width: 80%;
+  }
+}
+
+
 @media screen and (max-width: 750px) {
   .header {
-    display: block !important;
     padding-top: 5rem;
-
-
-    .introduction {
-      background-position-y: -4rem;
-      background-position-x: unset;
-      width: 80%;
-    }
+    background-position-x: -10rem;
+    background-position-y: 6rem;
   }
 
   .item-card {
@@ -26,6 +47,9 @@
         float: unset !important;
       }
     }
+  }
+  .modal-img{
+    max-width: 90%;
   }
 
   .description {
