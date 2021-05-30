@@ -40,8 +40,8 @@ const Homepage = () => {
         title: 'Vanilla JS Based Meme Generator',
         secondaryTitle: 'Make memes and start your very own meme gallery.',
         description: 'Meme Generator was built individually using vanilla javascript and canvas, without the use of external libraries.',
-        link: '',
-        github: '',
+        link: 'https://galinickel.github.io/meme-generator-gali/',
+        github: 'https://github.com/galinickel/meme-generator-gali',
         extendedDescription:'Among its features are Canvas, drag & drop, mobile and browser touch events. Create and manage your own personalized meme gallery or download your memes to your computer.'
     },
     {
@@ -50,8 +50,8 @@ const Homepage = () => {
         title: 'Weather-Buddy',
         secondaryTitle: 'Check the forecast - anywhere on the globe.',
         description: 'Weather-Buddy is a React based web app where you can get real-time updates on the forecast anywhere in the world - and keep track of your favorite locations.',
-        link: '',
-        github: '',
+        link: 'https://galinickel.github.io/Gali-Nickel-20-05-2021/#/',
+        github: 'https://github.com/galinickel/Gali-Nickel-20-05-2021',
         extendedDescription:'Weather-Buddy sports a responsive design complete with day and night modes, state management and the ability to manage your own favorite cities list - and check on their 5-day forecast whenever you like.'
     },
     {
@@ -60,8 +60,8 @@ const Homepage = () => {
         title: 'Minesweeper',
         secondaryTitle: 'The classic game brought to life with a handful of refreshing options, written in Vanilla Javascript.',
         description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
-        link: '',
-        github: '',
+        link: 'https://galinickel.github.io/sprint1/',
+        github: 'https://github.com/galinickel/sprint1',
         extendedDescription:'This rendition of the cult classic features three difficulty levels, a lives system, a hint system and a safe-click system, giving you the opportunity to ascend your experience to new heights. '
     }]
 

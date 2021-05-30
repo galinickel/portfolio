@@ -79,7 +79,9 @@ h1 {
   color: #ffefd1;
   float: right;
   padding-right: 2%;
-
+.wired-rendered{
+  margin: 0 2%;
+}
   .flex {
     align-items: center;
     display: flex;
@@ -199,7 +201,6 @@ p {
 }
 
 .highlight-button {
-  padding-bottom: 2%;
 
   &.animated {
     transform: scale(1);
