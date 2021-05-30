@@ -32,34 +32,37 @@ const Homepage = () => {
         description: 'Appsus is a Vue-js based clone of both Gmail and Google Keep, built in Vue-js without additional libraries.',
         link: 'https://galinickel.github.io/appsus/',
         github: 'https://github.com/galinickel/appsus',
-        extendedDescription: ''
+        extendedDescription: 'Appsus Keep is a Google Keep clone, featuring dynamic component rendering to support notes of text, image, video and list nature. Appsus Mail is a Gmail clone, supporting saving an email to the Keep app and vice versa.'
     },
     {
         img: 'images/memegenerator.png',
         elevation: 1,
         title: 'Vanilla JS Based Meme Generator',
-        secondaryTitle: 'Manage your team in a highly customizable environment.',
-        description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
+        secondaryTitle: 'Make memes and start your very own meme gallery.',
+        description: 'Meme Generator was built individually using vanilla javascript and canvas, without the use of external libraries.',
         link: '',
-        github: ''
+        github: '',
+        extendedDescription:'Among its features are Canvas, drag & drop, mobile and browser touch events. Create and manage your own personalized meme gallery or download your memes to your computer.'
     },
     {
-        img: 'images/memegenerator.png',
+        img: 'images/weather.png',
         elevation: 3,
         title: 'Weather-Buddy',
-        secondaryTitle: 'Manage your team in a highly customizable environment.',
-        description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
+        secondaryTitle: 'Check the forecast - anywhere on the globe.',
+        description: 'Weather-Buddy is a React based web app where you can get real-time updates on the forecast anywhere in the world - and keep track of your favorite locations.',
         link: '',
-        github: ''
+        github: '',
+        extendedDescription:'Weather-Buddy sports a responsive design complete with day and night modes, state management and the ability to manage your own favorite cities list - and check on their 5-day forecast whenever you like.'
     },
     {
-        img: 'images/memegenerator.png',
+        img: 'images/minesweeper.png',
         elevation: 2,
         title: 'Minesweeper',
-        secondaryTitle: 'Manage your team in a highly customizable environment.',
+        secondaryTitle: 'The classic game brought to life with a handful of refreshing options, written in Vanilla Javascript.',
         description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
         link: '',
-        github: ''
+        github: '',
+        extendedDescription:'This rendition of the cult classic features three difficulty levels, a lives system, a hint system and a safe-click system, giving you the opportunity to ascend your experience to new heights. '
     }]
 
     return (

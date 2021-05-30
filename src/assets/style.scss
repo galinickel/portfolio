@@ -6,6 +6,8 @@ html {
   scroll-behavior: smooth;
   color: hsl(219, 57%, 25%);
   overflow-x: hidden;
+  background-color:  #1b3564;
+
 
   ::-webkit-scrollbar {
     width: 13px;
@@ -47,6 +49,8 @@ h1 {
 .about-container {
   background-color: #cfece1;
   min-height: 33rem;
+  padding: 4rem 0;
+
 
 }
 
@@ -54,7 +58,6 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 4rem;
   max-width: 65%;
   margin: 0 auto;
 
@@ -65,6 +68,8 @@ h1 {
 
   .about-card {
     padding: 2%;
+    
+    background-color: #ffefd185;;
   }
 
 }
@@ -118,7 +123,9 @@ h1 {
     min-height: 25rem;
   }
 }
-
+.description-btn{
+  margin:1%;
+}
 .project-highlight{
   .item-container:nth-child(1){
     background-color:#f8c761;
@@ -208,7 +215,7 @@ p {
 
 .modal {
   display: flex;
-  max-width: 90rem;
+  max-width: 70rem;
   width: fit-content;
   padding: 4%;
 }

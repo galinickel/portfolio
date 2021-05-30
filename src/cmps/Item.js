@@ -11,6 +11,7 @@ const Item = props => {
         backgroundSize: 'cover'
     }
     let isOpen = displayModal ? { 'open': '' } : {}
+    const arrow= <svg xmlns="http://www.w3.org/2000/svg"  fill=" #1b3564" width="12" height="12" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
     return (
         <div className="item-container">
             <div className="item-card">
@@ -30,9 +31,9 @@ const Item = props => {
                         </h2>
                         <p className="item-description">
                             {description}
-                            <wired-button
+                            <wired-button class="description-btn"
                                 onClick={() => toggleModal(!displayModal)}>
-                                See More 🠊
+                                See More {arrow}
                 </wired-button>
                         </p>
                     </div>
