@@ -38,6 +38,15 @@ const Homepage = () => {
         description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
         link: '',
         github: ''
+    },
+    {
+        img: '/images/memegenerator.png',
+        elevation: 3,
+        title: 'Another pROJ',
+        secondaryTitle: 'Manage your team in a highly customizable environment.',
+        description: 'Trellworks was built in Vue, utilizing the powerful Vuex library for state management.',
+        link: '',
+        github: ''
     }]
 
     return (
@@ -56,21 +65,18 @@ const Homepage = () => {
             </div>
             <div ref={projectsRef} className="project-highlight">
                 <h1>Project Highlight</h1>
-
+                <p>I'm always working on something new and exploring new directions. This project is real special to me; it was built in a great team of three, in just under three weeks. When working in a team, I love assuming the role of an innovator- implementing new systems from the grounds up and exploring new technologies and libraries.</p>
                 <wired-divider class="divider"/>
                 <List listToRender={list} />
                 <p>Wanna see more projects? They're all right here!</p>
                 <wired-button class={showList ? 'highlight-button' : 'highlight-button animated'} onClick={() => toggleList(!showList)}>
                     {showList ? 'see less' : 'show me more'}</wired-button>
-            <wired-divider class="divider"/>
+            <wired-divider  class="divider"/>
             </div>
-
             <Fade top when={showList}>
                 {showList && <List listToRender={secondaryList} />}
             </Fade>
-
             <div ref={aboutRef}>  <About /></div>
-
         </>
     )
 }

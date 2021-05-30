@@ -30,11 +30,11 @@ const Item = props => {
                         </h2>
                         <p>
                             {description}
-                        </p>
                         <wired-button
                             onClick={() => toggleModal(!displayModal)}>
-                            See More
+                            See More 🠊
                 </wired-button>
+                        </p>
                     </div>
                 </section>
                 <wired-dialog {...isOpen}>
