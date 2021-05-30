@@ -2,7 +2,19 @@
   .header {
     background-position-y: unset;
   }
+
+  .about {
+    max-width: 80%;
+  }
 }
+
+@media screen and (max-width:1100px) {
+
+  .about {
+    max-width: 95%;
+  }
+}
+
 
 @media screen and(max-width: 900px) {
   .header {
@@ -19,8 +31,18 @@
     right: 0;
     position: absolute;
   }
-  .modal-img{
+
+  .modal-img {
     max-width: 80%;
+  }
+
+  .about {
+    flex-direction: column;
+    width: 85%;
+
+    section {
+      padding: unset;
+    }
   }
 }
 
@@ -48,11 +70,69 @@
       }
     }
   }
-  .modal-img{
+
+  .modal-img {
     max-width: 90%;
   }
 
   .description {
     width: unset !important;
   }
+
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    background-position-y: 1rem;
+  }
+
+  .cta-bar {
+    background-color: rgba(255, 239, 209, 0.76);
+
+    span {
+      display: block;
+    }
+
+  }
+
+  .img-preview {
+    width: 100% !important;
+  }
+
+  .item-card {
+    display: block !important; 
+    width: unset !important;
+    text-align: center;
+    padding: 8% 0;
+
+  }
+
+  .about {
+    width: 100%;
+    padding: 2%;
+
+    img {
+      max-width: 20rem;
+    }
+  }
+  .modal{
+    max-height:90vh;
+    overflow-y: auto;
+  }
+  .links-card {
+    margin: 0 auto;
+    padding: 0;
+    section{
+      width: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+.header{
+  h2{
+    background-color: #fef7dda2;
+
+  }
+}
 }

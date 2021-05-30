@@ -4,7 +4,7 @@ import "wired-elements";
 const Item = props => {
 
     const [displayModal, toggleModal] = useState(false)
-    const { img, title, secondaryTitle, description, link, github,extendedDescription,elevation } = props.project
+    const { img, title, secondaryTitle, description, link, github, extendedDescription, elevation } = props.project
     const style = {
         backgroundImage: `url(${img})`,
         height: '15rem',
@@ -28,11 +28,11 @@ const Item = props => {
                         <h2>
                             {secondaryTitle}
                         </h2>
-                        <p>
+                        <p className="item-description">
                             {description}
-                        <wired-button
-                            onClick={() => toggleModal(!displayModal)}>
-                            See More 🠊
+                            <wired-button
+                                onClick={() => toggleModal(!displayModal)}>
+                                See More 🠊
                 </wired-button>
                         </p>
                     </div>
@@ -41,11 +41,15 @@ const Item = props => {
                     <div className="modal">
                         <img className="modal-img" src={img} alt="project-img" />
                         <section>
-                            <h1>{title}</h1>
-                            <p>{description}</p>
+                        <h1>{title}</h1>
+                            <section className="modal-links">
+                                <a href={github}><wired-button>See on Github</wired-button></a>
+                                <a href={link}><wired-button>Visit the App</wired-button></a>
+                            </section>
+
+                            <p >{description}</p>
                             <p>{extendedDescription}</p>
-                            <p><a href={github}>See on Github</a>  </p>                        
-                            <a  href={link}><wired-button>Visit the App</wired-button></a>
+
                         </section>
                         <section>
                             <wired-button
