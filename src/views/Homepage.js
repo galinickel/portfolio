@@ -44,16 +44,16 @@ const Homepage = () => {
         github: 'https://github.com/galinickel/meme-generator-gali',
         extendedDescription:'Among its features are Canvas, drag & drop, mobile and browser touch events. Create and manage your own personalized meme gallery or download your memes to your computer.'
     },
-    {
-        img: 'images/weather.png',
-        elevation: 3,
-        title: 'Weather-Buddy',
-        secondaryTitle: 'Check the forecast - anywhere on the globe.',
-        description: 'Weather-Buddy is a React based web app where you can get real-time updates on the forecast anywhere in the world - and keep track of your favorite locations.',
-        link: 'https://galinickel.github.io/Gali-Nickel-20-05-2021/#/',
-        github: 'https://github.com/galinickel/Gali-Nickel-20-05-2021',
-        extendedDescription:'Weather-Buddy sports a responsive design complete with day and night modes, state management and the ability to manage your own favorite cities list - and check on their 5-day forecast whenever you like.'
-    },
+    // {
+    //     img: 'images/weather.png',
+    //     elevation: 3,
+    //     title: 'Weather-Buddy',
+    //     secondaryTitle: 'Check the forecast - anywhere on the globe.',
+    //     description: 'Weather-Buddy is a React based web app where you can get real-time updates on the forecast anywhere in the world - and keep track of your favorite locations.',
+    //     link: 'https://galinickel.github.io/Gali-Nickel-20-05-2021/#/',
+    //     github: 'https://github.com/galinickel/Gali-Nickel-20-05-2021',
+    //     extendedDescription:'Weather-Buddy sports a responsive design complete with day and night modes, state management and the ability to manage your own favorite cities list - and check on their 5-day forecast whenever you like.'
+    // },
     {
         img: 'images/minesweeper.png',
         elevation: 2,
