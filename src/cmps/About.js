@@ -13,7 +13,7 @@ const About = props => {
                     <h1>
                         Hey- I'm Gali. Fancy seein' you here!
                 </h1>
-                    <wired-card elevation={3}>
+                    <div>
                         <section className="about-card">
                             <p>
                                 Knowledgeable and experienced in composing single-page web apps, I'm creative thinker who's always after new challenges in front end or fullstack development. Passionate about working with progressive technologies and assuming a role where I can bring my creative point of view into the forefront. Strong sense of design and aesthetics as I am an artist who brings value add to every project.
@@ -27,7 +27,7 @@ const About = props => {
                                 Growing up, I fell in love with the art of design and illustration - a passion I hold close to this day. 
                     </p>
                         </section>
-                    </wired-card>
+                    </div>
                 </section>
             </div>
 
